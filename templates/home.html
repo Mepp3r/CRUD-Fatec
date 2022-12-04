@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Personagens de Comics</title>
+</head>
+<body>
+    <table border="1" bordercolor="#000000">
+        <tr>
+            <th>Nome</th>
+            <th>Apelido</th>
+            <th>Idade</th>
+            <th>Cidade</th>
+            <th>Comics</th>
+        </tr>
+        {%for table in table%}
+        <tr>
+            <td>{{table['name']}}</td>
+            <td>{{table['nickname']}}</td>
+            <td>{{table['age']}}</td>
+            <td>{{table['city']}}</td>
+            <td>{{table['comics']}}</td>
+        </tr>
+        {%endfor%}
+    </table>
+    
+    <div>
+        <p></p>
+        <button><a href="insert">Adicionar</a></button>
+        <button><a href="remove">Remover</a></button>
+        <button><a href="alternate">Alterar</a></button>
+    </div>
+
+</body>
+</html>
