@@ -27,6 +27,8 @@ def insertlayout():
         function.insert(name, nickname, age, city, comics)
         return redirect("/")
     return render_template("insert.html")
+
+
 @app.route("/remove", methods=['GET', 'POST'])
 def remove():
     if request.method == 'POST':
